@@ -25,10 +25,17 @@ I will also give a tutorial below on taskscheduling on ubuntu below.
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
+* Install Cron on ubuntu
 ```
-code blocks for commands
+apt-get install cron
+```
+* Verify if Cron is running. This will list the running tasks
+```
+systemctl status cron
+```
+* Configure your cron tasks. I recommend [Crontab.guru](https://crontab.guru/) for playing with cron time-values
+```
+crontab –e
 ```
 
 ## Help
@@ -37,6 +44,11 @@ Any advise for common problems or issues.
 ```
 Go fuck yourself
 ```
+An example could look like. The main script will run each day at 06:00, 10:00 and 14:00
+```
+0 6,10,14 * * * /usr/bin/python3 home/pricenotifier/main.py
+```
+
 
 ## Authors
 
