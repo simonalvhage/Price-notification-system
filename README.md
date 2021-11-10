@@ -37,6 +37,10 @@ systemctl status cron
 ```
 crontab –e
 ```
+An example could look like. The main script will run each day at 06:00, 10:00 and 14:00
+```
+0 6,10,14 * * * /usr/bin/python3 home/pricenotifier/main.py
+```
 
 ## Help
 
@@ -44,11 +48,6 @@ Any advise for common problems or issues.
 ```
 Go fuck yourself
 ```
-An example could look like. The main script will run each day at 06:00, 10:00 and 14:00
-```
-0 6,10,14 * * * /usr/bin/python3 home/pricenotifier/main.py
-```
-
 
 ## Authors
 
