@@ -41,6 +41,10 @@ An example could look like. The main script will run each day at 06:00, 10:00 an
 ```
 0 6,10,14 * * * /usr/bin/python3 home/pricenotifier/main.py
 ```
+* Restart cron
+```
+service cron reload
+```
 
 ## Help
 
