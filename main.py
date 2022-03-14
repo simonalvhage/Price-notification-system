@@ -26,7 +26,7 @@ def initdb():
     mydb = mysql.connector.connect(
         host="192.168.1.23",
         user="root",
-        password="9807097614!",
+        password="XXXXXXXX",
         database="pricenotifier"
     )
     global mycursor
@@ -148,7 +148,7 @@ def sendemail(mail,service,title, url, price,imgurl):
     message["Subject"] = "We have found better prices!"
     message["From"]= "Simons Watchlist <simonswatchlist@gmail.com>"
     message["To"] = mail
-    password = "Simonswatchlist98"
+    password = "XXXXXXXX"
     sender_email = "simonswatchlist@gmail.com"
     receiver_email = mail
     print(imgurl)
