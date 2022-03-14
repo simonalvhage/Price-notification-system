@@ -50,7 +50,7 @@ service cron reload
 
 Any advise for common problems or issues.
 ```
-Go fuck yourself
+
 ```
 
 ## Authors
