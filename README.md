@@ -1,6 +1,6 @@
 # Price Notifier
 
-Simple price notifier, written in Python, mySQL and HTML (Bootstrap 4)
+The Price-notification-system is a Python, MySQL, and HTML (Bootstrap 4) based simple price notifier. It allows users to submit a product link and specify a percentage drop for triggering a notification. The system, hosted on Flask, incorporates a form for product URL and email entry. If the email is new, it generates a password for record deletion. The program inserts new product URLs into a database, along with title, price, and image URL. It regularly checks product prices against the database and notifies users via email if prices drop as specified. The README includes setup instructions and dependency details.
 
 ## Description
 
